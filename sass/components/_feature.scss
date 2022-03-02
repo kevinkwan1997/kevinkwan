@@ -1,0 +1,70 @@
+.feature {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    margin: 5rem 0;
+    padding: 1rem 2rem;
+    box-shadow: 0 1rem 5rem rgba(0,0,0,0.2);
+    text-align: center;
+    background-color: rgba($secondary-light, 0.4);
+    transition: all .4s;
+
+    @include unselectable;
+
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
+
+    &:hover {
+        transform: translateY(-1rem);
+    }
+
+    &:hover &__img {
+        transform: scale(1.06);
+        filter: brightness(1);
+    }
+
+    &__img {
+        width: 50%;
+        border-radius: 3px;
+        transition: all .4s .4s;
+        position: relative;
+        filter: brightness(0.8);
+
+         @include respond(tab-land) {
+            width: 75%;
+        }
+
+        
+    }
+
+    &__content {
+        width: 50%;
+        padding: 1rem 2rem;
+
+        @include respond(tab-port) {
+            width: 75%;
+        }
+
+        
+        @include respond(phone) {
+            width: 100%;
+        }
+    }
+
+    &__name {
+        font-size: 1.5em; //24px standard
+    }
+
+    &__stack {
+
+    }
+
+    &__author {
+        font-size: 1.5em;
+    }
+
+    &__desc {
+        margin-bottom: 1rem;
+    }
+}

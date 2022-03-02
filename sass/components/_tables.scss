@@ -1,0 +1,30 @@
+.table {
+    color: $white;
+    width: 100%;
+    font-size: 1.6rem;
+
+    &--row {
+
+        th {
+            font-size: 2rem;
+            font-weight: 300;
+        }
+        
+        td {
+            text-align: start;;
+        }
+    }
+
+    &--vertical {
+       border-collapse: separate;
+       border-spacing: 2em;
+
+       @include respond(tab-port) {
+        border-spacing: 1em;
+    }
+    }
+
+    &__icon {
+
+    }
+}

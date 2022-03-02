@@ -1,0 +1,94 @@
+
+.section-introduction {
+    padding: $section-padding;
+    background-image: linear-gradient(to right bottom, $tertiary 60%, $tertiary-dark);
+    background-size: cover;
+
+    @include respond(tab-land) {
+        padding: $section-padding-tab-land;
+    }
+
+    @include respond(tab-port) {
+        padding: $section-padding-tab-port;
+    }
+
+    @include respond(phone) {
+        padding: $section-padding-phone;
+    }
+}
+
+.section-featured {
+    padding: $section-padding;
+    background-color: $white;
+
+    @include respond(tab-land) {
+        padding: $section-padding-tab-land;
+    }
+
+    @include respond(tab-port) {
+        padding: $section-padding-tab-port;
+    }
+
+    @include respond(phone) {
+        padding: $section-padding-phone;
+    }
+}
+
+.section-other {
+    padding: $section-padding;
+    background-image: linear-gradient(to right bottom, $tertiary 60%, $tertiary-dark);
+    background-size: cover;
+    @include respond(tab-land) {
+        padding: $section-padding-tab-land;
+    }
+
+    @include respond(tab-port) {
+        padding: $section-padding-tab-port;
+    }
+
+    @include respond(phone) {
+        padding: $section-padding-phone;
+    }
+}
+
+.featured {
+    &__list {
+        list-style: none;
+
+        &>.featured__item:nth-of-type(2)>.feature {
+            flex-direction: row-reverse;
+
+            @include respond(tab-land) {
+                flex-direction: column;
+            }
+        }
+        
+    }
+}
+
+.other {
+        list-style: none;
+        font-size: 1.6rem;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        @include respond(small) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include respond(tab-port) {
+            grid-template-columns: 1fr;
+        }
+        width: 100%;
+        gap: 2rem 2rem;
+
+    &__item {
+        border-radius: 5px;
+        background-color: $grey-light-2;
+        box-shadow: 0 2rem 2rem rgba(0,0,0,0.2);
+        width: calc(50%-4rem);
+        padding: 3rem 5rem;
+    }
+}
+

@@ -1,0 +1,93 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        text-decoration: none;
+        display: block;
+        font-size: 1.8rem;
+        padding: 1rem 2rem;
+        border-radius: 3px;
+        color: $black;
+        position: relative;
+        overflow: hidden;
+        background-color: $grey-light-1;
+    }
+
+    &:not(:last-child) {
+        margin-right: 2rem;
+    }
+
+    &::before {
+        content: '';
+        position: absolute; 
+        top: 50%;
+        left: 50%;
+        border-radius: 100%;
+        transform: translate(-50%, -50%) scale(0);
+        height: 350%;
+        aspect-ratio: 1 / 1;
+        transition: all .6s cubic-bezier(.42,.97,.62,.97);
+
+    }
+
+    &--light {
+        border: 2px solid $primary-light;
+        
+        &:hover::before {
+            color: $white;
+            background-color: $primary;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+    }
+
+    &--light > &--text {
+        color: $primary;
+    }
+
+    &--dark {
+        position: relative; 
+        border: 2px solid $tertiary-dark;
+
+        &:hover::before {
+            background-color: $tertiary-dark;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+    }
+
+    &--dark > &--text {
+        color: $tertiary-dark;
+    }
+
+    &--dark:hover &--text {
+        color: $white;
+    }
+
+    &--light:hover &--text {
+        color: $white;
+    }
+
+    &--text {
+        position: relative;
+        z-index: 50;
+        transition: color .4s;
+    }
+
+    &--link {
+        &:link,
+        &:visited {
+            color: $primary;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            border-bottom: 1px solid $primary;
+                        transition: all .2s;
+        }
+
+        &:hover,
+        &:active {
+            background-color: $white;
+        }
+    }
+    
+}

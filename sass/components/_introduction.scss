@@ -1,0 +1,44 @@
+.introduction {
+
+    &__profile {
+        display: flex;
+        align-items: center;
+
+        @include respond(tab-land) {
+            flex-direction: column;
+        }
+    }
+
+    &__img-container {
+        overflow: hidden;
+        border-radius: 50%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        @include respond(tab-land) {
+            margin-bottom: 10rem;
+            max-width: 75%;
+         }
+    }
+
+    &__img {
+        max-width: 100%;
+        transition: all .3s;
+        transform: scale(1.12);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img:hover {
+        transform: scale(1);
+        filter: blur(5px) brightness(45%);
+    }
+    
+    &__stack {
+        width: 100%;
+    }
+
+}

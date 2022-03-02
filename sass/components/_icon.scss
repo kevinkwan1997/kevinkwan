@@ -1,0 +1,43 @@
+.icon__medium {
+
+    display: inline-block;
+    transition: all .3s;
+    text-align: center;
+    
+    &:not(:last-child) {
+        margin-right: 1rem;
+    }
+
+    &--icon {
+        display: inline-block;
+        max-width: 3rem;
+        max-height: 3rem;
+        vertical-align: middle;
+    }
+
+    &--caption {
+        font-size: 1.2rem;
+    }
+
+    &:hover {
+        transform: translateY(-4px);
+        -webkit-filter: drop-shadow(0 1rem 2rem rgba(0,0,0,0.2));
+        filter: drop-shadow(0 1rem 2rem rgba(0,0,0,0.8));
+    }
+
+}
+
+
+.icon__small {
+    display: flex;
+    justify-content: center;
+
+    &--icon {
+        display: inline-block;
+        fill: $white;
+        width: 2.5rem;
+        height: 2.5rem;
+        vertical-align: center;
+        margin-right: 1rem;
+    }
+}

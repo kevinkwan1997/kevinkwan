@@ -1,0 +1,81 @@
+.header {
+    height: 95vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: $section-padding;
+    margin-top: 5rem;
+    background-color: var(--bg);
+    overflow: hidden;   
+
+    @include respond(tab-land) {
+        padding: $section-padding-tab-land
+    }
+
+        @include respond(tab-port) {
+        padding: $section-padding-tab-port;
+    }
+
+    @include respond(phone) {
+        padding: $section-padding-phone;
+    }
+
+    &__btns {
+        display: flex;
+    }
+
+    &__content {
+        position: relative;
+        z-indeX: 10;
+        max-width: 50%;
+
+        @include respond(tab-land) {
+            padding: 2rem;
+            max-width: 100%;
+            background-color: rgba($primary-dark, 0.7);
+        }
+    }
+
+    &__bg {
+        position: absolute;
+        z-index: -10;
+        height: 60%;
+        aspect-ratio: 1 / 1;
+        transform: rotate(-35deg);
+        transition: all .4s;
+        background-color: $tertiary;
+        right: 0%;
+        top: 50%;
+        font-size: 1.8rem;
+        transform-origin: top left;
+        animation: rotateIn 2s;
+
+        @include respond(tab-land) {
+            right: -18%;
+            &:hover {
+                transform: rotate(-35deg) !important; 
+   
+            }
+        }
+
+    }
+    
+
+    &__bg2 {
+        position: absolute;
+        z-index: 0;
+        height: 60%;
+        aspect-ratio: 1 / 1;
+        transform: rotate(-35deg);
+        background-color: $primary-light;
+        right: 0%;
+        top: 40%;
+        font-size: 1.8rem;
+        transform-origin: top left;
+
+        @include respond(tab-land) {
+            right: -18%;
+        }
+        
+    }
+}

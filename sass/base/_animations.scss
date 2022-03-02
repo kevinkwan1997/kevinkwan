@@ -1,0 +1,44 @@
+@keyframes fadeEnterBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeEnterTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-25rem)
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes rotateIn {
+    0% {
+        transform-origin: bottom right;
+        transform: rotate(-180deg);
+    }
+
+    100% {
+        transform: rotate(-35deg);
+    }
+}
+
+.fade-enter-bottom {
+    animation: fadeEnterBottom 1s;
+}
+
+.fade-enter-bottom-slow {
+    animation: fadeEnterBottom 2s;
+}
+
+.fade-enter-top {
+    animation: fadeEnterTop 1s;
+}
