@@ -1,0 +1,33 @@
+:root {
+    --theme-light--bg: #f7f7f7;
+    --theme-light--text: #000;
+    --theme-light--subtext: #E48A65;
+
+    --theme-dark--bg: #292828;
+    --theme-dark--text: #f7f7f7;
+    --theme-dark--subtext: #E48A65;
+}
+
+.light-theme--bg {
+    background-color: var(--theme-light--bg);
+}
+
+.light-theme--text {
+    color: var(--theme-light--text);
+}
+
+.light-theme--subtext {
+    color: var(--theme-light--subtext);
+}
+
+.dark-theme--bg {
+    background-color: var(--theme-dark--bg);
+}
+
+.dark-theme--text {
+    color: var(--theme-dark--text);
+}
+
+.dark-theme--subtext {
+    color: var(--theme-dark--subtext);
+}

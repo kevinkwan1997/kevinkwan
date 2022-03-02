@@ -5,7 +5,6 @@
     align-items: center;
     padding: $section-padding;
     margin-top: 5rem;
-    background-color: var(--bg);
     overflow: hidden;   
 
     @include respond(tab-land) {
@@ -38,7 +37,7 @@
 
     &__bg {
         position: absolute;
-        z-index: -10;
+        z-index: 0;
         height: 60%;
         aspect-ratio: 1 / 1;
         transform: rotate(-35deg);

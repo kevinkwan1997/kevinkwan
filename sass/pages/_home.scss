@@ -19,7 +19,6 @@
 
 .section-featured {
     padding: $section-padding;
-    background-color: $white;
 
     @include respond(tab-land) {
         padding: $section-padding-tab-land;
