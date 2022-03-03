@@ -38,7 +38,7 @@
     &__bg {
         position: absolute;
         z-index: 0;
-        height: 60%;
+        height: 35rem;
         aspect-ratio: 1 / 1;
         transform: rotate(-35deg);
         transition: all .4s;
@@ -63,7 +63,7 @@
     &__bg2 {
         position: absolute;
         z-index: 0;
-        height: 60%;
+        height: 35rem;
         aspect-ratio: 1 / 1;
         transform: rotate(-35deg);
         background-color: $primary-light;

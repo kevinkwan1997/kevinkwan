@@ -39,7 +39,8 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
   @media (max-width: 75em) {
     html {
       font-size: 57.5%; } }
@@ -303,7 +304,7 @@ body {
   .header__bg {
     position: absolute;
     z-index: 0;
-    height: 60%;
+    height: 35rem;
     aspect-ratio: 1 / 1;
     transform: rotate(-35deg);
     transition: all .4s;
@@ -321,7 +322,7 @@ body {
   .header__bg2 {
     position: absolute;
     z-index: 0;
-    height: 60%;
+    height: 35rem;
     aspect-ratio: 1 / 1;
     transform: rotate(-35deg);
     background-color: #f0a58c;
@@ -343,7 +344,8 @@ body {
   align-items: center;
   font-size: 1.6rem;
   background-color: #eee;
-  color: #E48A65; }
+  color: #E48A65;
+  transition: all .4s; }
   @media (max-width: 37.5em) {
     .navigation {
       flex-direction: column; } }
@@ -446,6 +448,9 @@ body {
       display: flex;
       justify-content: center;
       align-items: center; }
+
+.hide {
+  top: -50rem; }
 
 .section-introduction {
   padding: 7.5rem 15rem;
