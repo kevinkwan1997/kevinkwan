@@ -9,13 +9,10 @@
     font-size: 1.6rem;
     background-color: $grey-light-2;
     color: $primary;
+    transition: all .4s;
 
     @include respond(phone) {
         flex-direction: column;
-    }
-
-    &__theme {
-        border: none;
     }
 
     &__profile {
@@ -141,4 +138,8 @@
         height: 100%;
         padding: 1rem 2rem;
     }
+}
+
+.hide {
+    top: -50rem;
 }
