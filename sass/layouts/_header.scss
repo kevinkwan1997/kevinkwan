@@ -47,14 +47,9 @@
         top: 50%;
         font-size: 1.8rem;
         transform-origin: top left;
-        animation: rotateIn 2s;
 
         @include respond(tab-land) {
             right: -18%;
-            &:hover {
-                transform: rotate(-35deg) !important; 
-   
-            }
         }
 
     }

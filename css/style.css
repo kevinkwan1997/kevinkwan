@@ -312,13 +312,10 @@ body {
     right: 0%;
     top: 50%;
     font-size: 1.8rem;
-    transform-origin: top left;
-    animation: rotateIn 2s; }
+    transform-origin: top left; }
     @media (max-width: 75em) {
       .header__bg {
-        right: -18%; }
-        .header__bg:hover {
-          transform: rotate(-35deg) !important; } }
+        right: -18%; } }
   .header__bg2 {
     position: absolute;
     z-index: 0;
